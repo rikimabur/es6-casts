@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Strings Methods</title>
+</head>
+
+<body></body>
+<p>Click the button to display the extracted part of the string.</p>
+
+<button onclick="myFunction()">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+    //repeat
+    function myFunction() {
+        var str = "Welcome to ES6 Course";
+        document.getElementById("demo").innerHTML = str.repeat(10);
+    }
+    /// includes
+    const greetMsg = `[firstName] [lastName] Age`;
+    console.log(greetMsg.includes('Age'));
+</script>
+</body>
+
+</html>
