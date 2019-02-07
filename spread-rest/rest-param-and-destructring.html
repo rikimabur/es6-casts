@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spread and Rest</title>
+</head>
+
+<body>
+    <script>
+        const persons = [
+            'Riki',
+            '1',
+            'riki@gmail.com',
+            'riki@ya.com'
+        ]
+        const [name, id, ...emails] = persons;
+
+
+        function submitBlogPost(title, content, ...categories) {
+            console.log(categories);
+        }
+        submitBlogPost('ES6 Post',
+            'KOI',
+            'Nodejs',
+            'Javascript',
+            'ES6'
+        )
+    </script>
+</body>
+
+</html>
